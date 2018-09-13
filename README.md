@@ -12,6 +12,7 @@ mysql-5.7.17 install document
 ```shell
 cd /data/; tar -xvf mysql-5.7.17-linux-glibc2.5-x86_64.tar.gz
 chown mysql:mysql mysql-5.7.17-linux-glibc2.5-x86_64 -R
+chmod 777 mysql-5.7.17-linux-glibc2.5-x86_64
 cd mysql-5.7.17-linux-glibc2.5-x86_64
 cp support-files/my-default.cnf ./my.cnf
 ```
@@ -28,7 +29,9 @@ server_id = 1
 socket  = /data/mysql-5.7.17-linux-glibc2.5-x86_64/mysql.sock
 ```
 
-tips: 可以根据 安装目录的需求自行修改.
+tips:
+- 可以根据 安装目录的需求自行修改.
+- 删除/etc/my.cnf等配置文件
 
 ### 安装
 
