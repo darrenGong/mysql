@@ -48,7 +48,7 @@ ln -sf /data/mysql-5.7.17-linux-glibc2.5-x86_64/mysql.sock /tmp/mysql.sock
 - 登陆mysql
 
   ```shell
-  mysql -uroot -s /tmp/mysql.sock	  # 验证是否可以登录，若不能登录，检查前面的步骤是否OK
+  mysql -uroot -S /tmp/mysql.sock	  # 验证是否可以登录，若不能登录，检查前面的步骤是否OK
   ```
 
 - 给本地用户授权
